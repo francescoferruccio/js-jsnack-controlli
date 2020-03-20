@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffcc00;
+  height: 100vh;
+  width: 100vw;
+}
+
+div {
+  position: absolute;
+  animation: rotate 5s linear infinite;
+  width: 650px;
+  text-align: center;
+}
+
+h1 {
+  color: #cc0066;
+}
+
+@keyframes rotate {
+  0% {left: 0; top: calc(50% - 50px);}
+  25% {left: calc(50% - 325px); top: 0;}
+  50% {left: calc(100% - 650px); top: calc(50% - 50px);}
+  75% {left: calc(50% - 325px); top: calc(100% - 50px);}
+  100% {left: 0; top: calc(50% - 50px);}
+}
